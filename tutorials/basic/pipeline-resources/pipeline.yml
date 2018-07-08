@@ -1,15 +1,15 @@
 ---
 resources:
-- name: resource-tutorial
+- name: resource-tutorial-anil
   type: git
   source:
     uri: https://github.com/starkandwayne/concourse-tutorial.git
     branch: develop
 
 jobs:
-- name: job-hello-world
+- name: job-hello-world-anil
   public: true
   plan:
-  - get: resource-tutorial
+  - get: resource-tutorial-anil
   - task: hello-world
     file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
