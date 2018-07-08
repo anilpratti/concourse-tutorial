@@ -7,4 +7,4 @@ image_resource:
 
 run:
   path: echo
-  args: [helloq Anil Pratti]
+  args: [hello Anil Pratti]
